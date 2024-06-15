@@ -3,10 +3,16 @@ import ReactDOM from 'react-dom/client';
 
 
 
-const JSXheading = (<h1 className = "random" tabIndex= "1">
-    Namste Adesh
+const Heading = () => (<h1 className = "random" tabIndex= "1">
+    Namste Random
     </h1>);
 
+const Heading2 = () =>  (
+     <div>
+         < Heading />
+        <h1 className = "random" tabIndex= "1">Namste Adesh </h1>
+    </div>
+);
 const root = ReactDOM.createRoot(document.getElementById("root"));
 
-root.render(JSXheading);
+root.render(<Heading2 />);
